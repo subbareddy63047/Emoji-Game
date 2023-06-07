@@ -1,0 +1,66 @@
+/* Write your code here. */
+.subbu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.win_lose-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border-width: 12px;
+  border: 2px solid #ffffff;
+  background-color: #b5e1ee;
+  height: 60%;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  border-radius: 10px;
+  margin-bottom: 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.first-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  width: 50%;
+  /* border: 2px red solid; */
+}
+.heading {
+  font-size: 90%;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: 'roboto';
+}
+.score1 {
+  font-size: 80%;
+  color: #ffffff;
+  font-weight: bold;
+  font-style: 'roboto';
+}
+.digit1 {
+  font-size: 80%;
+  color: #6a59ff;
+  font-weight: bold;
+  font-style: 'roboto';
+}
+.button1 {
+  background-color: #ffce27;
+  border-radius: 5px;
+  border-width: 0px;
+  font-size: 70%;
+  width: 80%;
+  padding: 3%;
+  color: #000000;
+  outline: none;
+  cursor: pointer;
+}
+.img1 {
+  height: 50%;
+  width: 50%;
+  /* border: 2px red solid; */
+}
