@@ -2,7 +2,8 @@
 import './index.css'
 
 const WinOrLoseCard = props => {
-  const {checkconditon, score} = props
+  const {checkconditon, score, l} = props
+  console.log(l)
   const subbu = () => {
     checkconditon()
   }

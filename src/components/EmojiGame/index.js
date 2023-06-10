@@ -45,8 +45,17 @@ class EmojiGame extends Component {
   }
 
   checkClick = emojiUrl => {
-    const {list, topScore} = this.state
-    if (list.includes(emojiUrl)) {
+    const {list, topScore, score} = this.state
+    console.log(score)
+    if (score === 11) {
+      this.setState({
+        topScore: list.length + 1,
+        list: [],
+        condition: false,
+        score: 12,
+      })
+    } else if (list.includes(emojiUrl)) {
+      console.log(`length ${list.length}`)
       if (list.length > topScore) {
         this.setState({
           topScore: list.length,
@@ -56,13 +65,6 @@ class EmojiGame extends Component {
       } else {
         this.setState({score: list.length, list: [], condition: false})
       }
-
-      /* this.setState({
-        score: 0,
-        topScore: list.length,
-        list: [],
-        condition: false,
-      }) */
     } else {
       this.setState(prevState => ({
         list: [...prevState.list, emojiUrl],
@@ -74,7 +76,6 @@ class EmojiGame extends Component {
   render() {
     const {emojisList} = this.props
     const {score, topScore, condition} = this.state
-
     return (
       <div className="main-bg-container">
         <div className="background-container">
